@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fuentes: -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+
+    <title>Contactanos</title>
+    <link rel="icon" href="C:\Users\Valentino\Desktop\Consec.arg\imagenes\iconos\consecFavicon.png"  sizes="32x32" type="image/x-icon">
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+
+<body>
+    
+    <header>
+        <div class="botonheader"><a href="index.html">Inicio</a></div>
+        <div class="botonheader"><a href="servicios.html">Servicios</a></div>
+        <div class="botonheader"><a href="contacto.html">Contacto</a></div>
+        <img id="logo" src="imagenes/iconos/logoConsec.png" alt="Consec.arg">
+    </header>
+
+
+    <main>
+
+        <section class="formu">
+            <form method="post" action="https://register-demo.freecodecamp.org">
+
+                <fieldset>
+                    <h2>Ingresa tus datos para que nos contactemos:</h2>
+                    <label for="first-name">Ingresa tu Nombre: <input id="first-name" type="text" required/></label>
+                    <label for="last-name">Ingresa tu Apellido: <input id="last-name" type="text" required/></label>
+                    <label for="email">Ingresa tu Email: <input id="email" type="email" required/></label>
+                    <label for="cel">Ingresa tu Celular: <input id="cel" type="tel" required/></label>
+                </fieldset>
+        
+                <fieldset>
+                    <h2>Contanos un poco mas, ¿Qué perfil de cliente sos?</h2>
+                    <label for="cuenta_personal"><input id="cuenta_personal" type="radio" name="unicaopcion" class="inline"/> Particular </label>
+                    <label for="cuenta_negocio"><input id="cuenta_negocio" type="radio" name="unicaopcion" class="inline"/> Negocio </label>
+                    <label for="cuenta_empresa"><input id="cuenta_empresa" type="radio" name="unicaopcion" class="inline"/> Empresa </label>
+                </fieldset>
+
+                <fieldset>
+                    <label for="referrer"><h2>¿Qué tipo de trabajo te gustaría realizar?</h2>
+                        <select id="referrer">
+                            <option value="">Elija una opcion: </option>
+                            <option value="1">Albañilería</option>
+                            <option value="2">Construcción en Seco</option>
+                            <option value="3">Pintura</option>
+                            <option value="4">Impermeabilizaciones</option>
+                            <option value="5">Electricidad</option>
+                            <option value="6">Desagües</option>
+                            <option value="7">Agua y Gas</option>
+                        </select>
+                    </label >
+                </fieldset>
+
+                <fieldset>
+                    <label for="referrer"><h2>¿Por dónde nos encontraste?</h2>
+                        <select id="referrer">
+                            <option value="">Elija una opcion: </option>
+                            <option value="1">Anuncio en Internet / Redes</option>
+                            <option value="2">Los encontré yo mismo</option>
+                            <option value="3">Me conto un conocido</option>
+                        </select>
+                    </label >
+                </fieldset>
+
+                <p><i>¡Nosotros nos encargaremos de contactarte en menos de 24 horas!</i></p>
+                
+                <fieldset>
+                <input type="submit" value="Solicitar Presupuesto"></input>
+                </fieldset>
+                
+            </form>
+        </section>
+
+
+    </main>
+
+
+</body>
+
+
+</html>

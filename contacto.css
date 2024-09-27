@@ -1,0 +1,174 @@
+
+/* ////////////////////////////////////////////////////////// GLOBAL //////////////////////////////////////////////////////////////*/
+
+:root {
+
+    --color_fondo: linear-gradient(45deg, rgb(189, 218, 238), rgb(247, 255, 222));
+    --color_titulos: #16325B;
+    --color_tarjeta: linear-gradient(to bottom left, #8be4e7, #83b1e5);
+}
+
+* {
+
+    scroll-behavior: smooth;
+    font-family: "Open Sans", sans-serif;
+}
+
+h2 { color: var(--color_titulos); }
+
+body { 
+    
+    background: var(--color_fondo);
+} 
+
+p { color: black; }
+
+/* ////////////////////////////////////////////////////////// HEADER //////////////////////////////////////////////////////////////*/
+
+header {
+
+    margin-bottom: 10px;
+    padding: 50px 40px 30px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Me los acomoda en la caja a partes iguales */
+
+    position: relative;
+    top: -30px;
+
+    border: 2px solid black;
+    border-radius: 0 0 30px 30px;
+    background-color: #16325B;
+}
+
+/* logo de consec en header */
+#logo {
+
+    /* Ver relacion de tamaño del png, en este caso era 950 x 100 */
+    width: 210px;
+    height: 68px;
+}
+
+.botonheader {
+
+    width: 15%;
+
+    /* border: 2px solid black; */
+    border-radius: 30px;
+    background-color: #5AB2FF;
+
+    /* Fue CENTRADO manualmente.. */
+    padding: 22px 5px;
+    text-align: center;
+    
+}
+
+.botonheader a {
+
+    height: 20px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* //////////////////////////// CURSOR HEADER //////////////////////////// */
+
+.botonheader a:link, .botonheader a:visited {
+
+    text-decoration: none;
+    color: var(--color_titulos);;
+}
+
+
+.botonheader:hover {
+
+    text-decoration: none;
+    background-color: #3da9fc;
+}
+
+
+
+/* //////////////////////////// FORMULARIO //////////////////////////// */
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formu {
+
+    width: 60%;
+    border-radius: 30px;
+    background-color: #83b1e5;
+    padding: 2rem 0;
+}
+
+form {
+
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+  
+fieldset {
+
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid var(--color_titulos);
+}
+  
+fieldset:last-of-type {
+
+    border-bottom: none;
+}
+  
+label {
+
+    display: block;
+    margin: 0.5rem 0;
+}
+  
+input, textarea, select {
+
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+  
+input, textarea {
+
+    background-color: #ffffff;
+    border: 1px solid var(--color_titulos);
+    color: black;
+    border-radius: 5px;
+}
+  
+.inline {
+
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+  
+input[type="submit"] {
+
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+
+    background-color: white;
+    border-color: var(--color_titulos);
+}
+
+input[type="submit"]:hover {
+
+    background-color: #acd6f7;
+    
+}
